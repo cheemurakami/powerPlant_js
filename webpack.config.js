@@ -2,11 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const dotEnv = require('dotenv-webpack-plugin')
+const dotEnv = require('dotenv-webpack')
 
 module.exports = {
   mode: 'development',
-  entry: './src/main.js',
+  entry: './src/powerPlant.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
