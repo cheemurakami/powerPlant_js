@@ -14,8 +14,8 @@
 export let plant1 = {"kind": "tulip", "soil": 0, "water": 0, "light": 0}
 export let plant2 = {"kind": "rose", "soil": 0, "water": 0, "light": 0}
 
-export const storeState1 = () => {
-  let currentState = plant1;
+export const storeState1 = (plant) => {
+  let currentState = plant;
   return (stateChangeFunction) => {
     const newState = stateChangeFunction(currentState);
     currentState = {...newState};
@@ -30,7 +30,7 @@ export const storeState2 = () => {
     return newState;
   }
 }
-export const plant1StateChanger = storeState1()
+export const plant1StateChanger = storeState1(plant1)
 export const plant2StateChanger = storeState2() 
 // const stateChanger = storeState();
 
