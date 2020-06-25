@@ -1,4 +1,4 @@
-//prob #1
+//state prob #1
 const paint =  (color) => {
   const obj = {
     paints: () => {
@@ -14,7 +14,7 @@ painter1.paints();
 painter2.paints();
 painter3.paints();
 
-//prob #2
+//state prob #2
 const canSound = (soundKindStr) => {
   const obj = {
     sound: () => {
@@ -30,7 +30,7 @@ oldCar.sound();
 const sleepyBear = canSound("Grrr...yawn");
 sleepyBear.sound();
 
-//prob #3
+//state prob #3
 const canThrow = () =>{
   const obj = {
     throw: (robotName) => {

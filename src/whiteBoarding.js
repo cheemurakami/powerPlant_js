@@ -68,8 +68,6 @@ console.log(painter1.paints())
 console.log(painter2.paints())
 
 
-
-
 const hasColor = (painter) => {
   return (color) => {
     painter.color = color
